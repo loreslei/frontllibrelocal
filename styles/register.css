@@ -12,6 +12,8 @@ body{
 }
 
 
+
+
 .margin {
     width: 100%;
     height: 100%;
@@ -41,4 +43,12 @@ body{
 
 #BtnCadastrar:hover{
     opacity: 65%;
+}
+
+@media(max-width:1500px) {
+
+    #ContainerLogin{
+        height: 90%;
+    }
+    
 }
