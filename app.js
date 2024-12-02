@@ -9,24 +9,7 @@ const app = express();
 app.use(express.json());
 
 
-const corsOptions = {
-  origin: 'https://reg-auth-llibre-rorx-ktfjko4uv-loresleis-projects.vercel.app', // Permite qualquer origem. Você pode definir um domínio específico aqui, como 'https://seu-frontend.vercel.app'.
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-  allowedHeaders: '*', // Permite qualquer cabeçalho
-};
-
-// Usa o CORS com a configuração definida
-app.use(cors(corsOptions));
-
-
-app.use(
-  cors({
-    origin: "https://regauthllibre-production.up.railway.app",
-    credentials: true,
-  })
-);
-
-
+app.use(cors());
 
 const User = require("./models/User");
 
