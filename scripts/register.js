@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
         headers: {
           "Content-Type": "application/json",
         },
-        credentials: "include", // Para enviar cookies, se necessário
         body: JSON.stringify({
           name: nome,
           email: email,
